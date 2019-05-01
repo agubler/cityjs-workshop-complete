@@ -1,0 +1,15 @@
+.body {
+	max-width: 800px;
+	margin: 0px auto;
+	padding-top: 80px;
+}
+
+.articles {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sentinel {
+	height: 20px;
+}
