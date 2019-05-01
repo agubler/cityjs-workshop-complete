@@ -9,9 +9,13 @@ const HackerNews = createWidget(() => (
 	<div>
 		<Header />
 		<Outlet key="home" id="home" renderer={() => <Body />} />
-		<Outlet key="comment" id="comments" renderer={(matchDetails) => {
-			return <Comments id={matchDetails.params.id} />}
-		}/>
+		<Outlet
+			key="comment"
+			id="comments"
+			renderer={(matchDetails) => {
+				return <Comments id={matchDetails.params.id} />;
+			}}
+		/>
 	</div>
 ));
 

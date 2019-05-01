@@ -22,7 +22,11 @@ export const ArticleSummary = createWidget<ArticleSummaryProperties>(({ properti
 		<div>
 			<div classes={[css.info]}>{properties.author}</div>
 			<div classes={[css.info]}>{properties.time}</div>
-			<div classes={[css.info]}><Link classes={[css.sublink]} to="comments" params={{ id: `${properties.id}` }}>{`${properties.commentCount} Comments`}</Link></div>
+			<div classes={[css.info]}>
+				<Link classes={[css.sublink]} to="comments" params={{ id: `${properties.id}` }}>{`${
+					properties.commentCount
+				} Comments`}</Link>
+			</div>
 		</div>
 	</li>
 ));

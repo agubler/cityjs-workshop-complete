@@ -18,10 +18,11 @@ export const Body = createWidget(({ middleware }) => {
 	let widgetKey = 0;
 
 	for (let i = 1; i <= currentPage; i++) {
-		const articleSummaries = middleware.articles.getOrRead({ pagination: { start: i, size: 30 } }) || new Array(30).fill({});
+		const articleSummaries =
+			middleware.articles.getOrRead({ pagination: { start: i, size: 30 } }) || new Array(30).fill({});
 		const rows = articleSummaries.map(({ id, key, url, commentCount, points, title, author, time }) => {
 			if (!key) {
-				return <ArticlePlaceholder key={widgetKey++}/>;
+				return <ArticlePlaceholder key={widgetKey++} />;
 			}
 			return (
 				<ArticleSummary
