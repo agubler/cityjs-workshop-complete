@@ -59,18 +59,18 @@
 	background-size: 800px 104px;
 }
 
-.animatedTitle {
+.animatedPrimary {
 	background: #ddd;
 	background: linear-gradient(to right, #ddd 8%, #ccc 18%, #ddd 33%);
 }
 
-.animatedSubTitle {
+.animatedSecondary {
 	animation-delay: 0.2s;
 	background: #f6f7f8;
 	background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
 }
 
-.titleShell {
+.primaryShell {
 	max-width: 650px;
 	border-radius: 4px;
 	height: 21px;
@@ -79,15 +79,6 @@
 	transition: opacity 0.5s;
 	opacity: 1;
 	display: inline-block;
-}
-
-.subtitleShell {
-	width: 60%;
-	border-radius: 4px;
-	max-width: 350px;
-	height: 15px;
-	padding-bottom: 2px;
-	margin-right: 16px;
 }
 
 .container {

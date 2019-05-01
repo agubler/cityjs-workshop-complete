@@ -3,7 +3,7 @@ import { createWidgetFactory, tsx } from '@dojo-labs/framework/widget-core/tsx';
 import Comment from './Comment';
 import Loading from './Loading';
 import articles from './articles';
-import * as css from './Body.m.css'
+import * as css from './Comments.m.css'
 
 const createWidget = createWidgetFactory({ articles });
 

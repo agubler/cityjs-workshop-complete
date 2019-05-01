@@ -39,3 +39,11 @@
 	display: inline-block;
 	margin: 2px;
 }
+
+.link {
+	color: black;
+}
+
+.sublink {
+	color: #fff;
+}
